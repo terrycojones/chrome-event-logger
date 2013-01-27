@@ -10,7 +10,7 @@ if len(sys.argv) != 1:
     sys.exit(1)
 
 about = 'chrome-event-logger'
-APP_ID = 'xxx'
+APP_ID = 'beeifcgeecpnkjhgcaofjobefmajlcgi'
 codebase = ('https://fluiddb.fluidinfo.com/about/' + about +
             '/fluidinfo.com/chrome.crx')
 
