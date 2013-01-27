@@ -37,7 +37,7 @@ CEL.disabled()
 // Enable logging of some calls (see below).
 CEL.enable(name1, name2, ...)
 
-// Enable logging of some calls (see below).
+// Disable logging of some calls (see below).
 CEL.disable(name1, name2, ...)
 ```
 
@@ -59,6 +59,9 @@ for example, if you call `CEL.enable('omnibox.onInputEntered')` all
 logged.  If you don't want to enable and disable groups of calls in this
 way, always pass explicit API calls.
 
+`CEL.disabled` will show you the names of individual calls that are
+disabled, as well as any disabled higher levels.
+
 ## Global enable / disable
 
 The extension provides a context menu item that lets you globally enable or
@@ -74,11 +77,11 @@ https://fluiddb.fluidinfo.com/about/chrome-event-logger/fluidinfo.com/chrome.crx
 The source to the extension is available on Github. Here's how to get and
 install it.
 
-* Download the repo: `git clone http://github.com/terrycojones/chrome-event-logger`
-* In chrome, go to [chrome://extensions](chrome://extensions)
-* Click on `Developer mode`
-* Click on `Load Unpacked Extension...`
-* Navigate to the directory where you cloned the repo and click `Open`
+* Download the repo: `git clone [http://github.com/terrycojones/chrome-event-logger](http://github.com/terrycojones/chrome-event-logger)`
+* In Chrome, go to [chrome://extensions](chrome://extensions).
+* Click `Developer mode`.
+* Click `Load Unpacked Extension...`
+* Navigate to the directory where you cloned the repo and click `Open`.
 
 ## Possible TODO
 
