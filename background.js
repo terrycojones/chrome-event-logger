@@ -172,9 +172,9 @@ var CEL = {
         // [chrome.devtools.network.onRequestFinished, 'devtools.network.onRequestFinished', 'request'],
         // [chrome.devtools.network.onNavigated, 'devtools.network.onNavigated', 'ur'],
         // [chrome.fileBrowserHandler.onExecute, 'fileBrowserHandler.onExecute'],  // Only available on Chrome OS.
-        [chrome.downloads.onChanged, 'downloads.onChanged', 'downloadDelta'],
-        [chrome.downloads.onCreated, 'downloads.onCreated', 'downloadItem'],
-        [chrome.downloads.onErased, 'downloads.onErased', 'downloadId'],
+        // [chrome.downloads.onChanged, 'downloads.onChanged', 'downloadDelta'], // Not in stable Chrome channel
+        // [chrome.downloads.onCreated, 'downloads.onCreated', 'downloadItem'], // Not in stable Chrome channel
+        // [chrome.downloads.onErased, 'downloads.onErased', 'downloadId'], // Not in stable Chrome channel
         [chrome.extension.onConnect, 'extension.onConnect', 'port'],
         [chrome.extension.onConnectExternal, 'extension.onConnectExternal', 'port'],
         [chrome.extension.onMessage, 'extension.onMessage', 'message', 'sender', 'sendResponse'],
