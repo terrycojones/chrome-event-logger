@@ -56,7 +56,6 @@ var CEL = {
 
         for (i = 0; i < this.events.length; i++){
             name = this.events[i][1];
-            console.log('checking ' + name);
             if (this.isEnabled(name)){
                 result.push(name);
             }
