@@ -1,6 +1,6 @@
 {
   "name": "Chrome Event Logger",
-  "version": "0.0.70",
+  "version": "0.0.71",
   "description": "Log all chrome.* API events.",
   "update_url": "https://fluiddb.fluidinfo.com/about/chrome-event-logger/fluidinfo.com/chrome-update.xml",
   "manifest_version": 2,

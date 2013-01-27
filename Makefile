@@ -1,6 +1,6 @@
 NAME := chrome-event-logger-extension
 
-zip:
+extract:
 	rm -fr export
 	mkdir export
 	git archive --prefix=$(NAME)/ -v --format zip HEAD > export/$(NAME).zip
@@ -10,10 +10,16 @@ zip:
             export/$(NAME)/Makefile \
             export/$(NAME)/.gitignore \
             export/$(NAME)/bin
-	cd export && zip -qr -9 -X $(NAME) $(NAME)
 
-crx: zip
+crx: extract
+	cd export && zip -qr -9 -X $(NAME) $(NAME)
 	cd export && ../bin/create-crx.sh $(NAME) ../PRIVATE-KEY
+
+cws: extract
+	cp PRIVATE-KEY export/$(NAME)/key.pem
+	grep -v '"update_url"' export/$(NAME)/manifest.json > export/manifest.tmp
+	mv export/manifest.tmp export/$(NAME)/manifest.json
+	cd export && zip -qr -9 -X $(NAME)-cws $(NAME)
 
 dist: crx
 	./bin/upload-crx.py export/$(NAME).crx
