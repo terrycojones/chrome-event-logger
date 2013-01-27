@@ -79,10 +79,10 @@ Github](http://github.com/terrycojones/chrome-event-logger). Here's how to
 clone and install it.
 
 * Download the repo: `git clone http://github.com/terrycojones/chrome-event-logger`
-* In Chrome, go to [chrome://extensions](chrome://extensions).
-* Click `Developer mode`.
+* In Chrome, go to [chrome://extensions](chrome://extensions)
+* Click `Developer mode`
 * Click `Load Unpacked Extension...`
-* Navigate to the directory where you cloned the repo and click `Open`.
+* Navigate to the directory where you cloned the repo and click `Open`
 
 ## Possible TODO
 
