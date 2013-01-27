@@ -7,6 +7,7 @@ extract:
 	cd export && unzip -o $(NAME).zip
 	rm export/$(NAME).zip
 	rm -fr export/$(NAME)/PRIVATE-KEY \
+            export/$(NAME)/images/screenshot-1280x800.png \
             export/$(NAME)/Makefile \
             export/$(NAME)/.gitignore \
             export/$(NAME)/bin
