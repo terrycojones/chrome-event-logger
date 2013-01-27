@@ -94,6 +94,8 @@ var CEL = {
             onclick : function(info, tab){
                 this.globallyEnabled = info.checked;
                 this.updateMenuItem();
+                console.log('CEL logging globally ' +
+                            (info.checked ? 'enabled.' : 'disabled.'));
             }.bind(this)
         });
 
@@ -107,7 +109,7 @@ var CEL = {
         var func = eventInfo[0], name = eventInfo[1];
         var listener = function(){
             var args, i;
-            if (this.isEnabled(name)){
+            if (this.globallyEnabled && this.isEnabled(name)){
                 args = ['EVENT: ' + name];
                 if (eventInfo.length > 2){
                     args.push('ARGS:');
