@@ -74,10 +74,11 @@ https://fluiddb.fluidinfo.com/about/chrome-event-logger/fluidinfo.com/chrome.crx
 
 ## Installation from source
 
-The source to the extension is available on Github. Here's how to get and
-install it.
+The source to the extension [is available on
+Github](http://github.com/terrycojones/chrome-event-logger). Here's how to
+clone and install it.
 
-* Download the repo: `git clone [http://github.com/terrycojones/chrome-event-logger](http://github.com/terrycojones/chrome-event-logger)`
+* Download the repo: `git clone http://github.com/terrycojones/chrome-event-logger`
 * In Chrome, go to [chrome://extensions](chrome://extensions).
 * Click `Developer mode`.
 * Click `Load Unpacked Extension...`
